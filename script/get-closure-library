@@ -39,6 +39,8 @@ EOF
                 -or -path './fx' -prune \
                 -or -path './graphics' -prune \
                 -or -path './labs' -prune \
+                -or -path './messaging/testdata' -prune \
+                -or -path './module/testdata' -prune \
                 -or -path './net/testdata' -prune \
                 -or -path './testing' -prune \
                 -or -path './ui' -prune \

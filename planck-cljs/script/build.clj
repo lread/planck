@@ -24,15 +24,16 @@
          (binding [*out* *err*]
            (println "WARNING:" (cljs.analyzer/message env s)))
          (when-not (warning-type non-fatal-warnings)
-           (System/exit 1)))))]
+           #_(System/exit 1)))))]
   (api/build (api/inputs "src")
     {:output-dir         "out"
      :output-to          "out/main.js"
      :optimizations      :none
+     :verbose true
      :static-fns         true
      :optimize-constants false
      :dump-core          false
-     :parallel-build     true
+     :parallel-build     false
      :libs               ["lib/closure"
                           "lib/third_party/closure"]
      :foreign-libs       [{:file     "jscomp.js"

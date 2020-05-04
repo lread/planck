@@ -51,14 +51,14 @@ checkCmdSuccess() {
     fi
 }
 
-export GCC_RELEASE="20190301"
+export GCC_RELEASE="20200315"
 export CLOSURE_JS_RELEASE=${GCC_RELEASE}.0.0
 script/get-closure-compiler
 
-export GCL_RELEASE="20190301"
+export GCL_RELEASE="20191027"
 script/get-closure-library
 
-script/get-build-cache
+#script/get-build-cache
 
 export PAREDIT_JS_RELEASE="0.3.6"
 
