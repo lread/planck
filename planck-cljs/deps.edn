@@ -1,4 +1,4 @@
-{:deps {org.clojure/clojurescript {:mvn/version "1.10.753"}
+{:deps {org.clojure/clojurescript {:mvn/version "1.10.758"}
         org.clojure/google-closure-library {:mvn/version "0.0-20191016-6ae1f72f"}
         org.clojure/test.check {:mvn/version "0.10.0-alpha4"}
         com.cognitect/transit-cljs {:mvn/version "0.8.256"}
